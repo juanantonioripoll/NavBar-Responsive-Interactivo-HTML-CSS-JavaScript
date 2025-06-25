@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navbar Responsive Interactivo - juanaripoll</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <!-- Logo y Título -->
+        <div class="navbar-left">
+            <a title="MiSitio" href="./"><img src="img/logo.png" alt="Logo" class="logo" /></a>
+            <a title="MiSitio" href="./" class="site-title">juanaripoll</a>
+        </div>
+        <!-- Búsqueda -->
+        <div class="navbar-center">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." class="search-input" />
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <!-- Menús -->
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#"><i class="fas fa-concierge-bell"></i> Servicios <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> Diseño Web</a></li>
+                        <li><a href="#"><i class="fas fa-bullhorn"></i> Marketing</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Consultoría</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#"><i class="fas fa-info-circle"></i> Nosotros <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#"><i class="fas fa-users"></i> Equipo</a></li>
+                        <li><a href="#"><i class="fas fa-history"></i> Historia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Botón menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Menú móvil -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li>
+                <a href="#"><i class="fas fa-concierge-bell"></i> Servicios</a>
+                <ul>
+                    <li><a href="#"><i class="fas fa-paint-brush"></i> Diseño Web</a></li>
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> Marketing</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Consultoría</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-info-circle"></i> Nosotros</a>
+                <ul>
+                    <li><a href="#"><i class="fas fa-users"></i> Equipo</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i> Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </div>
+    <!-- Contenido de la página -->
+    <main class="contenido centrado">
+        <section>
+            <img src="img/logo.png" alt="Banner" class="logo-content" />
+            <h1>NavBar Responsive Interactivo</h1>
+            <p>Programación HTML, CSS y JavaScript (Front-End)</p>
+        </section>
+    </main>
+    <!-- Script -->
+    <script src="js/navbar.js"></script>
+</body>
+</html>
